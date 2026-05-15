@@ -1,5 +1,35 @@
 [
   {
+    "id": "baidu/cobuddy:free",
+    "name": "Baidu Qianfan: CoBuddy (free)",
+    "canonical_slug": "baidu/cobuddy-20260430",
+    "created": 1778035480,
+    "context_length": 131072,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "stop",
+      "tools"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 131072,
+      "max_completion_tokens": 65536,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
     "id": "baidu/qianfan-ocr-fast:free",
     "name": "Baidu: Qianfan-OCR-Fast (free)",
     "canonical_slug": "baidu/qianfan-ocr-fast-20260420",
@@ -69,158 +99,6 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "google/gemma-3-12b-it:free",
-    "name": "Google: Gemma 3 12B (free)",
-    "canonical_slug": "google/gemma-3-12b-it",
-    "created": 1741902625,
-    "context_length": 32768,
-    "supported_parameters": [
-      "max_tokens",
-      "seed",
-      "stop",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "google/gemma-3-27b-it:free",
-    "name": "Google: Gemma 3 27B (free)",
-    "canonical_slug": "google/gemma-3-27b-it",
-    "created": 1741756359,
-    "context_length": 131072,
-    "supported_parameters": [
-      "max_tokens",
-      "response_format",
-      "seed",
-      "stop",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "google/gemma-3-4b-it:free",
-    "name": "Google: Gemma 3 4B (free)",
-    "canonical_slug": "google/gemma-3-4b-it",
-    "created": 1741905510,
-    "context_length": 32768,
-    "supported_parameters": [
-      "max_tokens",
-      "response_format",
-      "seed",
-      "stop",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "google/gemma-3n-e2b-it:free",
-    "name": "Google: Gemma 3n 2B (free)",
-    "canonical_slug": "google/gemma-3n-e2b-it",
-    "created": 1752074904,
-    "context_length": 8192,
-    "supported_parameters": [
-      "max_tokens",
-      "response_format",
-      "seed",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 8192,
-      "max_completion_tokens": 2048,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "google/gemma-3n-e4b-it:free",
-    "name": "Google: Gemma 3n 4B (free)",
-    "canonical_slug": "google/gemma-3n-e4b-it",
-    "created": 1747776824,
-    "context_length": 8192,
-    "supported_parameters": [
-      "max_tokens",
-      "response_format",
-      "seed",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 8192,
-      "max_completion_tokens": 2048,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "google/gemma-4-26b-a4b-it:free",
     "name": "Google: Gemma 4 26B A4B  (free)",
     "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
@@ -269,44 +147,6 @@
       "temperature",
       "tool_choice",
       "tools",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "inclusionai/ling-2.6-1t:free",
-    "name": "inclusionAI: Ling-2.6-1T (free)",
-    "canonical_slug": "inclusionai/ling-2.6-1t-20260423",
-    "created": 1776948238,
-    "context_length": 262144,
-    "supported_parameters": [
-      "frequency_penalty",
-      "max_tokens",
-      "presence_penalty",
-      "repetition_penalty",
-      "response_format",
-      "seed",
-      "stop",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
       "top_p"
     ],
     "pricing": {
