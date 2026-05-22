@@ -194,44 +194,6 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "inclusionai/ring-2.6-1t:free",
-    "name": "inclusionAI: Ring-2.6-1T (free)",
-    "canonical_slug": "inclusionai/ring-2.6-1t-20260508",
-    "created": 1778247440,
-    "context_length": 262144,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "presence_penalty",
-      "reasoning",
-      "repetition_penalty",
-      "seed",
-      "stop",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 65536,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "liquid/lfm-2.5-1.2b-instruct:free",
     "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)",
     "canonical_slug": "liquid/lfm-2.5-1.2b-instruct-20260120",
@@ -340,7 +302,7 @@
     "name": "Meta: Llama 3.3 70B Instruct (free)",
     "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
     "created": 1733506137,
-    "context_length": 65536,
+    "context_length": 131072,
     "supported_parameters": [
       "frequency_penalty",
       "max_tokens",
@@ -374,7 +336,7 @@
     "name": "MiniMax: MiniMax M2.5 (free)",
     "canonical_slug": "minimax/minimax-m2.5-20260211",
     "created": 1770908502,
-    "context_length": 196608,
+    "context_length": 204800,
     "supported_parameters": [
       "include_reasoning",
       "max_tokens",
@@ -505,7 +467,7 @@
     "name": "NVIDIA: Nemotron 3 Super (free)",
     "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
     "created": 1773245239,
-    "context_length": 262144,
+    "context_length": 1000000,
     "supported_parameters": [
       "include_reasoning",
       "max_tokens",
@@ -736,7 +698,7 @@
     "name": "Qwen: Qwen3 Coder 480B A35B (free)",
     "canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
     "created": 1753230546,
-    "context_length": 262000,
+    "context_length": 1048576,
     "supported_parameters": [
       "frequency_penalty",
       "max_tokens",

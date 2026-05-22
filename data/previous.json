@@ -1,5 +1,38 @@
 [
   {
+    "id": "arcee-ai/trinity-large-thinking:free",
+    "name": "Arcee AI: Trinity Large Thinking (free)",
+    "canonical_slug": "arcee-ai/trinity-large-thinking",
+    "created": 1775058318,
+    "context_length": 262144,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 80000,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
     "id": "baidu/cobuddy:free",
     "name": "Baidu Qianfan: CoBuddy (free)",
     "canonical_slug": "baidu/cobuddy-20260430",
@@ -19,41 +52,6 @@
     "top_provider": {
       "context_length": 131072,
       "max_completion_tokens": 65536,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "baidu/qianfan-ocr-fast:free",
-    "name": "Baidu: Qianfan-OCR-Fast (free)",
-    "canonical_slug": "baidu/qianfan-ocr-fast-20260420",
-    "created": 1776707472,
-    "context_length": 65536,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "presence_penalty",
-      "reasoning",
-      "repetition_penalty",
-      "seed",
-      "stop",
-      "temperature",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 65536,
-      "max_completion_tokens": 28672,
       "is_moderated": false
     },
     "is_free": true,
@@ -88,6 +86,35 @@
     "top_provider": {
       "context_length": 32768,
       "max_completion_tokens": null,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash:free",
+    "name": "DeepSeek: DeepSeek V4 Flash (free)",
+    "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
+    "created": 1777000666,
+    "context_length": 1048576,
+    "supported_parameters": [
+      "include_reasoning",
+      "reasoning",
+      "tool_choice",
+      "tools"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 1048576,
+      "max_completion_tokens": 384000,
       "is_moderated": false
     },
     "is_free": true,
@@ -156,6 +183,44 @@
     "top_provider": {
       "context_length": 262144,
       "max_completion_tokens": 32768,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
+    "id": "inclusionai/ring-2.6-1t:free",
+    "name": "inclusionAI: Ring-2.6-1T (free)",
+    "canonical_slug": "inclusionai/ring-2.6-1t-20260508",
+    "created": 1778247440,
+    "context_length": 262144,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "repetition_penalty",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 262144,
+      "max_completion_tokens": 65536,
       "is_moderated": false
     },
     "is_free": true,
@@ -726,42 +791,6 @@
     "top_provider": {
       "context_length": 262144,
       "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "tencent/hy3-preview:free",
-    "name": "Tencent: Hy3 preview (free)",
-    "canonical_slug": "tencent/hy3-preview-20260421",
-    "created": 1776878150,
-    "context_length": 262144,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "presence_penalty",
-      "reasoning",
-      "stop",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 262144,
       "is_moderated": false
     },
     "is_free": true,
