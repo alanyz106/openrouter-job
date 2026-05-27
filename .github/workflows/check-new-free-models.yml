@@ -1,0 +1,29 @@
+name: Check new free models
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 * * * *"
+      timezone: "Asia/Shanghai"
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check for new free models
+        env:
+          WX_APP_TOKEN: ${{ secrets.WXPUSHER_APP_TOKEN }}
+          WX_UIDS: ${{ secrets.WXPUSHER_UIDS }}
+        run: python scripts/check_new_free_models.py

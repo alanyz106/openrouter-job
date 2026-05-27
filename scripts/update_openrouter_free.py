@@ -151,7 +151,6 @@ def send_wxpusher(title, content):
 def build_notification_content(free_models, added, removed):
     now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     lines = [f"OpenRouter Free Models Daily Report ({now_str})", ""]
-
     lines.append(f"Total free models: {len(free_models)}")
     if added:
         lines.append(f"New: {len(added)}")
