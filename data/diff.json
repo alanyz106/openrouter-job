@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-27T14:19:38Z",
+  "generated_at_utc": "2026-05-27T14:21:03Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -12,76 +12,12 @@
   },
   "total_current": 22,
   "added_count": 0,
-  "removed_count": 2,
+  "removed_count": 0,
   "free_reason_counts": {
     "suffix_and_all_zero_pricing": 22
   },
   "added": [],
-  "removed": [
-    {
-      "id": "arcee-ai/trinity-large-thinking:free",
-      "name": "Arcee AI: Trinity Large Thinking (free)",
-      "canonical_slug": "arcee-ai/trinity-large-thinking",
-      "created": 1775058318,
-      "context_length": 262144,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 80000,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "baidu/cobuddy:free",
-      "name": "Baidu Qianfan: CoBuddy (free)",
-      "canonical_slug": "baidu/cobuddy-20260430",
-      "created": 1778035480,
-      "context_length": 131072,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "stop",
-        "tools"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 65536,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
+  "removed": [],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "deepseek/deepseek-v4-flash:free",
