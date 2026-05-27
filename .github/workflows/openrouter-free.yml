@@ -24,8 +24,8 @@ jobs:
 
       - name: Run updater
         env:
-          WX_APP_TOKEN: ${{ secrets.WX_APP_TOKEN }}
-          WX_UIDS: ${{ secrets.WX_UIDS }}
+          WX_APP_TOKEN: ${{ secrets.WXPUSHER_APP_TOKEN }}
+          WX_UIDS: ${{ secrets.WXPUSHER_UIDS }}
         run: python scripts/update_openrouter_free.py
 
       - name: Commit changes
