@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-22T03:51:48Z",
+  "generated_at_utc": "2026-05-27T14:19:38Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,29 +10,24 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 24,
+  "total_current": 22,
   "added_count": 0,
-  "removed_count": 1,
+  "removed_count": 2,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 24
+    "suffix_and_all_zero_pricing": 22
   },
   "added": [],
   "removed": [
     {
-      "id": "inclusionai/ring-2.6-1t:free",
-      "name": "inclusionAI: Ring-2.6-1T (free)",
-      "canonical_slug": "inclusionai/ring-2.6-1t-20260508",
-      "created": 1778247440,
+      "id": "arcee-ai/trinity-large-thinking:free",
+      "name": "Arcee AI: Trinity Large Thinking (free)",
+      "canonical_slug": "arcee-ai/trinity-large-thinking",
+      "created": 1775058318,
       "context_length": 262144,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
         "temperature",
         "tool_choice",
         "tools",
@@ -45,6 +40,36 @@
       },
       "top_provider": {
         "context_length": 262144,
+        "max_completion_tokens": 80000,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "baidu/cobuddy:free",
+      "name": "Baidu Qianfan: CoBuddy (free)",
+      "canonical_slug": "baidu/cobuddy-20260430",
+      "created": 1778035480,
+      "context_length": 131072,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "stop",
+        "tools"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 131072,
         "max_completion_tokens": 65536,
         "is_moderated": false
       },
@@ -58,8 +83,6 @@
     }
   ],
   "all_current_ids": [
-    "arcee-ai/trinity-large-thinking:free",
-    "baidu/cobuddy:free",
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "deepseek/deepseek-v4-flash:free",
     "google/gemma-4-26b-a4b-it:free",

@@ -1,68 +1,5 @@
 [
   {
-    "id": "arcee-ai/trinity-large-thinking:free",
-    "name": "Arcee AI: Trinity Large Thinking (free)",
-    "canonical_slug": "arcee-ai/trinity-large-thinking",
-    "created": 1775058318,
-    "context_length": 262144,
-    "supported_parameters": [
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 80000,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "baidu/cobuddy:free",
-    "name": "Baidu Qianfan: CoBuddy (free)",
-    "canonical_slug": "baidu/cobuddy-20260430",
-    "created": 1778035480,
-    "context_length": 131072,
-    "supported_parameters": [
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "stop",
-      "tools"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 65536,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "name": "Venice: Uncensored (free)",
     "canonical_slug": "venice/uncensored",
@@ -636,7 +573,7 @@
     "name": "Poolside: Laguna M.1 (free)",
     "canonical_slug": "poolside/laguna-m.1-20260312",
     "created": 1777388504,
-    "context_length": 131072,
+    "context_length": 262144,
     "supported_parameters": [
       "include_reasoning",
       "max_tokens",
@@ -650,8 +587,8 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 8192,
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
       "is_moderated": false
     },
     "is_free": true,
@@ -667,7 +604,7 @@
     "name": "Poolside: Laguna XS.2 (free)",
     "canonical_slug": "poolside/laguna-xs.2-20260421",
     "created": 1777389604,
-    "context_length": 131072,
+    "context_length": 262144,
     "supported_parameters": [
       "include_reasoning",
       "max_tokens",
@@ -681,8 +618,8 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 8192,
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
       "is_moderated": false
     },
     "is_free": true,
