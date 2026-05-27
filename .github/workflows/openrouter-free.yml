@@ -3,8 +3,8 @@ name: Update OpenRouter free models
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 1 * * 5"
-      timezone: "Europe/Lisbon"
+    - cron: "0 9 * * *"
+      timezone: "Asia/Shanghai"
 
 permissions:
   contents: write
@@ -23,6 +23,9 @@ jobs:
           python-version: "3.12"
 
       - name: Run updater
+        env:
+          WX_APP_TOKEN: ${{ secrets.WX_APP_TOKEN }}
+          WX_UIDS: ${{ secrets.WX_UIDS }}
         run: python scripts/update_openrouter_free.py
 
       - name: Commit changes
@@ -31,6 +34,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A data
           git diff --cached --quiet && exit 0
-          ts="$(TZ=Europe/Lisbon date '+%Y-%m-%d %H:%M:%S %Z')"
+          ts="$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S %Z')"
           git commit -m "Update OpenRouter free models snapshot - ${ts}"
           git push

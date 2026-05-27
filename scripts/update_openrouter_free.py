@@ -1,4 +1,6 @@
 import json
+import os
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
@@ -24,6 +26,9 @@ PRICING_FIELDS = [
     "input_cache_read",
     "input_cache_write",
 ]
+
+WX_APP_TOKEN = os.environ.get("WX_APP_TOKEN", "")
+WX_UIDS = os.environ.get("WX_UIDS", "")
 
 
 def fetch_models():
@@ -70,7 +75,6 @@ def classify_free(model):
     suffix_free = model_id.endswith(":free")
     pricing = analyse_pricing(model.get("pricing"))
 
-    # Only models with the :free suffix are considered free.
     if not suffix_free:
         return False, "no_free_suffix"
 
@@ -108,6 +112,76 @@ def load_json(path, default):
         return default
     return json.loads(path.read_text(encoding="utf-8"))
 
+
+def send_wxpusher(title, content):
+    if not WX_APP_TOKEN:
+        print("[wxpusher] WX_APP_TOKEN not set, skipping notification")
+        return False
+
+    uids = [u.strip() for u in WX_UIDS.split(",") if u.strip()]
+    if not uids:
+        print("[wxpusher] WX_UIDS not set, skipping notification")
+        return False
+
+    payload = json.dumps({
+        "appToken": WX_APP_TOKEN,
+        "content": content,
+        "summary": title,
+        "contentType": 1,
+        "uids": uids,
+    }).encode("utf-8")
+
+    req = Request(
+        "https://wxpusher.zjiecode.com/api/send/message",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+
+    try:
+        with urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            print(f"[wxpusher] response: {result}")
+            return result.get("code") == 1000
+    except Exception as e:
+        print(f"[wxpusher] send failed: {e}", file=sys.stderr)
+        return False
+
+
+def build_notification_content(free_models, added, removed):
+    now_str = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+    lines = [f"OpenRouter Free Models Daily Report ({now_str})", ""]
+
+    lines.append(f"Total free models: {len(free_models)}")
+    if added:
+        lines.append(f"New: {len(added)}")
+    if removed:
+        lines.append(f"Removed: {len(removed)}")
+
+    if added:
+        lines.append("")
+        lines.append("--- New Models ---")
+        for m in added:
+            ctx = m.get("context_length", "N/A")
+            lines.append(f"  + {m['id']}")
+            if m.get("name"):
+                lines.append(f"    {m['name']} (ctx: {ctx})")
+
+    if removed:
+        lines.append("")
+        lines.append("--- Removed Models ---")
+        for m in removed:
+            lines.append(f"  - {m['id']}")
+
+    lines.append("")
+    lines.append("--- All Free Models ---")
+    for m in free_models:
+        lines.append(f"  {m['id']}")
+
+    return "\n".join(lines)
+
+
+# --- Main execution ---
 
 all_models = fetch_models()
 normalized_models = [normalize(m) for m in all_models]
@@ -164,4 +238,15 @@ diff_payload = {
 DIFF.write_text(
     json.dumps(diff_payload, indent=2, ensure_ascii=False),
     encoding="utf-8"
-            )
+)
+
+# Send WxPusher notification
+content = build_notification_content(free_models, added, removed)
+title = f"OpenRouter Free Models ({len(free_models)} models)"
+if added:
+    title += f", +{len(added)} new"
+if removed:
+    title += f", -{len(removed)} removed"
+
+send_wxpusher(title, content)
+print(f"\nDone. {len(free_models)} free models. Added: {len(added)}, Removed: {len(removed)}")
