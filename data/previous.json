@@ -108,6 +108,7 @@
       "reasoning",
       "response_format",
       "seed",
+      "stop",
       "temperature",
       "tool_choice",
       "tools",
@@ -273,7 +274,7 @@
     "name": "MiniMax: MiniMax M2.5 (free)",
     "canonical_slug": "minimax/minimax-m2.5-20260211",
     "created": 1770908502,
-    "context_length": 262144,
+    "context_length": 204800,
     "supported_parameters": [
       "include_reasoning",
       "max_tokens",
@@ -289,7 +290,7 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 262144,
+      "context_length": 196608,
       "max_completion_tokens": 8192,
       "is_moderated": true
     },
