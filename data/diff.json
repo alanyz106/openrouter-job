@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-30T04:52:34Z",
+  "generated_at_utc": "2026-05-31T05:18:03Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,14 +10,48 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 23,
+  "total_current": 22,
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 1,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 23
+    "suffix_and_all_zero_pricing": 22
   },
   "added": [],
-  "removed": [],
+  "removed": [
+    {
+      "id": "minimax/minimax-m2.5:free",
+      "name": "MiniMax: MiniMax M2.5 (free)",
+      "canonical_slug": "minimax/minimax-m2.5-20260211",
+      "created": 1770908502,
+      "context_length": 204800,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "tools"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 196608,
+        "max_completion_tokens": 8192,
+        "is_moderated": true
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "deepseek/deepseek-v4-flash:free",
@@ -27,7 +61,6 @@
     "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
     "meta-llama/llama-3.3-70b-instruct:free",
-    "minimax/minimax-m2.5:free",
     "moonshotai/kimi-k2.6:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
