@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-05-31T05:18:03Z",
+  "generated_at_utc": "2026-06-01T06:02:21Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,28 +10,24 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 22,
+  "total_current": 21,
   "added_count": 0,
   "removed_count": 1,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 22
+    "suffix_and_all_zero_pricing": 21
   },
   "added": [],
   "removed": [
     {
-      "id": "minimax/minimax-m2.5:free",
-      "name": "MiniMax: MiniMax M2.5 (free)",
-      "canonical_slug": "minimax/minimax-m2.5-20260211",
-      "created": 1770908502,
-      "context_length": 204800,
+      "id": "deepseek/deepseek-v4-flash:free",
+      "name": "DeepSeek: DeepSeek V4 Flash (free)",
+      "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
+      "created": 1777000666,
+      "context_length": 1048576,
       "supported_parameters": [
         "include_reasoning",
-        "max_tokens",
         "reasoning",
-        "response_format",
-        "seed",
-        "stop",
-        "temperature",
+        "tool_choice",
         "tools"
       ],
       "pricing": {
@@ -39,9 +35,9 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 196608,
-        "max_completion_tokens": 8192,
-        "is_moderated": true
+        "context_length": 1048576,
+        "max_completion_tokens": 384000,
+        "is_moderated": false
       },
       "is_free": true,
       "free_reason": "suffix_and_all_zero_pricing",
@@ -54,7 +50,6 @@
   ],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-    "deepseek/deepseek-v4-flash:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
     "liquid/lfm-2.5-1.2b-instruct:free",
