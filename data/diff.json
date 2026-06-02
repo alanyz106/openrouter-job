@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-01T06:02:21Z",
+  "generated_at_utc": "2026-06-02T05:48:34Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -12,42 +12,12 @@
   },
   "total_current": 21,
   "added_count": 0,
-  "removed_count": 1,
+  "removed_count": 0,
   "free_reason_counts": {
     "suffix_and_all_zero_pricing": 21
   },
   "added": [],
-  "removed": [
-    {
-      "id": "deepseek/deepseek-v4-flash:free",
-      "name": "DeepSeek: DeepSeek V4 Flash (free)",
-      "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
-      "created": 1777000666,
-      "context_length": 1048576,
-      "supported_parameters": [
-        "include_reasoning",
-        "reasoning",
-        "tool_choice",
-        "tools"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 384000,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
+  "removed": [],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "google/gemma-4-26b-a4b-it:free",
