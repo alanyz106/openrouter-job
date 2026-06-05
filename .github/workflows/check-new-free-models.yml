@@ -27,3 +27,13 @@ jobs:
           WX_APP_TOKEN: ${{ secrets.WXPUSHER_APP_TOKEN }}
           WX_UIDS: ${{ secrets.WXPUSHER_UIDS }}
         run: python scripts/check_new_free_models.py
+
+      - name: Commit check state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/check_current.json
+          git diff --cached --quiet && exit 0
+          ts="$(TZ=Asia/Shanghai date '+%Y-%m-%d %H:%M:%S %Z')"
+          git commit -m "Update check snapshot - ${ts}"
+          git push
