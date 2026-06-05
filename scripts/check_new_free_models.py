@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 DATA.mkdir(exist_ok=True)
 
-CURRENT = DATA / "current.json"
+CURRENT = DATA / "check_current.json"
 API_URL = "https://openrouter.ai/api/v1/models"
 
 WX_APP_TOKEN = os.environ.get("WX_APP_TOKEN", "")
@@ -146,6 +146,12 @@ previous = load_json(CURRENT, [])
 previous_ids = {m["id"] for m in previous}
 
 added_ids = sorted(current_ids - previous_ids)
+
+# Save current state for next comparison
+CURRENT.write_text(
+    json.dumps(current_free, indent=2, ensure_ascii=False),
+    encoding="utf-8"
+)
 
 if added_ids:
     added_models = [m for m in current_free if m["id"] in added_ids]

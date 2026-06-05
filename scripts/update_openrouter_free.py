@@ -239,7 +239,7 @@ DIFF.write_text(
     encoding="utf-8"
 )
 
-# Send WxPusher notification
+# Send WxPusher notification (daily report, always sent)
 content = build_notification_content(free_models, added, removed)
 title = f"OpenRouter Free Models ({len(free_models)} models)"
 if added:
