@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-09T05:05:39Z",
+  "generated_at_utc": "2026-06-10T05:18:13Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,35 +10,27 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 24,
-  "added_count": 1,
-  "removed_count": 0,
+  "total_current": 23,
+  "added_count": 0,
+  "removed_count": 1,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 24
+    "suffix_and_all_zero_pricing": 23
   },
-  "added": [
+  "added": [],
+  "removed": [
     {
-      "id": "nex-agi/nex-n2-pro:free",
-      "name": "Nex AGI: Nex-N2-Pro (free)",
-      "canonical_slug": "nex-agi/nex-n2-pro",
-      "created": 1780937140,
-      "context_length": 262144,
+      "id": "z-ai/glm-4.5-air:free",
+      "name": "Z.ai: GLM 4.5 Air (free)",
+      "canonical_slug": "z-ai/glm-4.5-air",
+      "created": 1753471258,
+      "context_length": 131072,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "pricing": {
@@ -46,8 +38,8 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "context_length": 131072,
+        "max_completion_tokens": 96000,
         "is_moderated": false
       },
       "is_free": true,
@@ -59,7 +51,6 @@
       "pricing_non_zero_fields": []
     }
   ],
-  "removed": [],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "google/gemma-4-26b-a4b-it:free",
@@ -83,7 +74,6 @@
     "poolside/laguna-m.1:free",
     "poolside/laguna-xs.2:free",
     "qwen/qwen3-coder:free",
-    "qwen/qwen3-next-80b-a3b-instruct:free",
-    "z-ai/glm-4.5-air:free"
+    "qwen/qwen3-next-80b-a3b-instruct:free"
   ]
 }
