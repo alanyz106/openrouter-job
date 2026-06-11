@@ -280,12 +280,8 @@
       "include_reasoning",
       "logprobs",
       "max_tokens",
-      "presence_penalty",
       "reasoning",
-      "repetition_penalty",
       "response_format",
-      "seed",
-      "stop",
       "structured_outputs",
       "temperature",
       "tool_choice",
@@ -763,38 +759,6 @@
     "top_provider": {
       "context_length": 262144,
       "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "z-ai/glm-4.5-air:free",
-    "name": "Z.ai: GLM 4.5 Air (free)",
-    "canonical_slug": "z-ai/glm-4.5-air",
-    "created": 1753471258,
-    "context_length": 131072,
-    "supported_parameters": [
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 96000,
       "is_moderated": false
     },
     "is_free": true,

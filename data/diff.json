@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-10T05:18:13Z",
+  "generated_at_utc": "2026-06-11T05:28:32Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,36 +10,33 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 23,
+  "total_current": 22,
   "added_count": 0,
   "removed_count": 1,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 23
+    "suffix_and_all_zero_pricing": 22
   },
   "added": [],
   "removed": [
     {
-      "id": "z-ai/glm-4.5-air:free",
-      "name": "Z.ai: GLM 4.5 Air (free)",
-      "canonical_slug": "z-ai/glm-4.5-air",
-      "created": 1753471258,
-      "context_length": 131072,
+      "id": "moonshotai/kimi-k2.6:free",
+      "name": "MoonshotAI: Kimi K2.6 (free)",
+      "canonical_slug": "moonshotai/kimi-k2.6-20260420",
+      "created": 1776699402,
+      "context_length": 262144,
       "supported_parameters": [
         "include_reasoning",
-        "max_tokens",
         "reasoning",
-        "temperature",
         "tool_choice",
-        "tools",
-        "top_p"
+        "tools"
       ],
       "pricing": {
         "prompt": "0",
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 96000,
+        "context_length": 262144,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "is_free": true,
@@ -59,7 +56,6 @@
     "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
     "meta-llama/llama-3.3-70b-instruct:free",
-    "moonshotai/kimi-k2.6:free",
     "nex-agi/nex-n2-pro:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
