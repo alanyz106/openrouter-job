@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-11T05:28:32Z",
+  "generated_at_utc": "2026-06-12T05:49:07Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -12,42 +12,12 @@
   },
   "total_current": 22,
   "added_count": 0,
-  "removed_count": 1,
+  "removed_count": 0,
   "free_reason_counts": {
     "suffix_and_all_zero_pricing": 22
   },
   "added": [],
-  "removed": [
-    {
-      "id": "moonshotai/kimi-k2.6:free",
-      "name": "MoonshotAI: Kimi K2.6 (free)",
-      "canonical_slug": "moonshotai/kimi-k2.6-20260420",
-      "created": 1776699402,
-      "context_length": 262144,
-      "supported_parameters": [
-        "include_reasoning",
-        "reasoning",
-        "tool_choice",
-        "tools"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
+  "removed": [],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "google/gemma-4-26b-a4b-it:free",
