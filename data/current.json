@@ -40,14 +40,19 @@
     "created": 1775227989,
     "context_length": 262144,
     "supported_parameters": [
+      "frequency_penalty",
       "include_reasoning",
       "max_tokens",
+      "presence_penalty",
       "reasoning",
+      "repetition_penalty",
       "response_format",
       "seed",
+      "stop",
       "temperature",
       "tool_choice",
       "tools",
+      "top_k",
       "top_p"
     ],
     "pricing": {
@@ -582,14 +587,21 @@
     "created": 1754414229,
     "context_length": 131072,
     "supported_parameters": [
+      "frequency_penalty",
       "include_reasoning",
       "max_tokens",
+      "presence_penalty",
       "reasoning",
+      "repetition_penalty",
+      "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "tool_choice",
-      "tools"
+      "tools",
+      "top_k",
+      "top_p"
     ],
     "pricing": {
       "prompt": "0",
