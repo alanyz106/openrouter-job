@@ -34,6 +34,43 @@
     "pricing_non_zero_fields": []
   },
   {
+    "id": "cohere/north-mini-code:free",
+    "name": "Cohere: North Mini Code (free)",
+    "canonical_slug": "cohere/north-mini-code-20260617",
+    "created": 1781723748,
+    "context_length": 256000,
+    "supported_parameters": [
+      "frequency_penalty",
+      "include_reasoning",
+      "max_tokens",
+      "presence_penalty",
+      "reasoning",
+      "seed",
+      "stop",
+      "temperature",
+      "tool_choice",
+      "tools",
+      "top_k",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 256000,
+      "max_completion_tokens": 64000,
+      "is_moderated": true
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
     "id": "google/gemma-4-26b-a4b-it:free",
     "name": "Google: Gemma 4 26B A4B  (free)",
     "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
@@ -60,7 +97,7 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 262144,
+      "context_length": 131072,
       "max_completion_tokens": 32768,
       "is_moderated": false
     },
@@ -81,6 +118,7 @@
     "supported_parameters": [
       "include_reasoning",
       "max_tokens",
+      "min_p",
       "reasoning",
       "response_format",
       "seed",
@@ -88,6 +126,8 @@
       "temperature",
       "tool_choice",
       "tools",
+      "top_a",
+      "top_k",
       "top_p"
     ],
     "pricing": {
@@ -96,8 +136,8 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "is_moderated": false
+      "max_completion_tokens": 8192,
+      "is_moderated": true
     },
     "is_free": true,
     "free_reason": "suffix_and_all_zero_pricing",
@@ -121,6 +161,7 @@
       "repetition_penalty",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
       "top_k",
       "top_p"
@@ -556,12 +597,16 @@
     "supported_parameters": [
       "include_reasoning",
       "max_tokens",
+      "min_p",
       "reasoning",
       "seed",
       "stop",
       "temperature",
       "tool_choice",
-      "tools"
+      "tools",
+      "top_a",
+      "top_k",
+      "top_p"
     ],
     "pricing": {
       "prompt": "0",
@@ -590,6 +635,7 @@
       "frequency_penalty",
       "include_reasoning",
       "max_tokens",
+      "min_p",
       "presence_penalty",
       "reasoning",
       "repetition_penalty",
@@ -600,6 +646,7 @@
       "temperature",
       "tool_choice",
       "tools",
+      "top_a",
       "top_k",
       "top_p"
     ],
@@ -609,8 +656,8 @@
     },
     "top_provider": {
       "context_length": 131072,
-      "max_completion_tokens": 8192,
-      "is_moderated": true
+      "max_completion_tokens": 32768,
+      "is_moderated": false
     },
     "is_free": true,
     "free_reason": "suffix_and_all_zero_pricing",
@@ -630,6 +677,7 @@
       "include_reasoning",
       "max_tokens",
       "reasoning",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools"
@@ -661,6 +709,8 @@
       "include_reasoning",
       "max_tokens",
       "reasoning",
+      "response_format",
+      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools"

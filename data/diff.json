@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-06-17T06:11:17Z",
+  "generated_at_utc": "2026-06-18T05:55:11Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,16 +10,55 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 22,
-  "added_count": 0,
+  "total_current": 23,
+  "added_count": 1,
   "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 22
+    "suffix_and_all_zero_pricing": 23
   },
-  "added": [],
+  "added": [
+    {
+      "id": "cohere/north-mini-code:free",
+      "name": "Cohere: North Mini Code (free)",
+      "canonical_slug": "cohere/north-mini-code-20260617",
+      "created": 1781723748,
+      "context_length": 256000,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 256000,
+        "max_completion_tokens": 64000,
+        "is_moderated": true
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
   "removed": [],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+    "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
     "liquid/lfm-2.5-1.2b-instruct:free",
