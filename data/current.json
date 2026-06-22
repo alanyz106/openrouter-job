@@ -298,11 +298,9 @@
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
-      "logprobs",
       "max_tokens",
       "reasoning",
       "response_format",
-      "structured_outputs",
       "temperature",
       "tool_choice",
       "tools",
@@ -315,7 +313,7 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": 262144,
+      "max_completion_tokens": 256000,
       "is_moderated": false
     },
     "is_free": true,
