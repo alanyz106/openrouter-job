@@ -290,41 +290,6 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "nex-agi/nex-n2-pro:free",
-    "name": "Nex AGI: Nex-N2-Pro (free)",
-    "canonical_slug": "nex-agi/nex-n2-pro",
-    "created": 1780937140,
-    "context_length": 262144,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "reasoning",
-      "response_format",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 256000,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "nousresearch/hermes-3-llama-3.1-405b:free",
     "name": "Nous: Hermes 3 405B Instruct (free)",
     "canonical_slug": "nousresearch/hermes-3-llama-3.1-405b",
