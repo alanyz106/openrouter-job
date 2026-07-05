@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-04T04:34:24Z",
+  "generated_at_utc": "2026-07-05T04:55:57Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
