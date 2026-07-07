@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-06T05:10:41Z",
+  "generated_at_utc": "2026-07-07T04:51:48Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,13 +10,53 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 23,
-  "added_count": 0,
+  "total_current": 24,
+  "added_count": 1,
   "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 23
+    "suffix_and_all_zero_pricing": 24
   },
-  "added": [],
+  "added": [
+    {
+      "id": "tencent/hy3:free",
+      "name": "Tencent: Hy3 (free)",
+      "canonical_slug": "tencent/hy3-20260706",
+      "created": 1783344048,
+      "context_length": 262144,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
   "removed": [],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
@@ -41,6 +81,7 @@
     "poolside/laguna-xs-2.1:free",
     "poolside/laguna-xs.2:free",
     "qwen/qwen3-coder:free",
-    "qwen/qwen3-next-80b-a3b-instruct:free"
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "tencent/hy3:free"
   ]
 }
