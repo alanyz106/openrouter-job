@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-09T04:51:58Z",
+  "generated_at_utc": "2026-07-10T04:51:44Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,14 +10,46 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 24,
+  "total_current": 23,
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 1,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 24
+    "suffix_and_all_zero_pricing": 23
   },
   "added": [],
-  "removed": [],
+  "removed": [
+    {
+      "id": "poolside/laguna-xs.2:free",
+      "name": "Poolside: Laguna XS.2 (free)",
+      "canonical_slug": "poolside/laguna-xs.2-20260421",
+      "created": 1777389604,
+      "context_length": 262144,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "cohere/north-mini-code:free",
@@ -39,7 +71,6 @@
     "openai/gpt-oss-20b:free",
     "poolside/laguna-m.1:free",
     "poolside/laguna-xs-2.1:free",
-    "poolside/laguna-xs.2:free",
     "qwen/qwen3-coder:free",
     "qwen/qwen3-next-80b-a3b-instruct:free",
     "tencent/hy3:free"
