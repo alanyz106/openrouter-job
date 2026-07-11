@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-10T04:51:44Z",
+  "generated_at_utc": "2026-07-11T04:11:58Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -12,44 +12,12 @@
   },
   "total_current": 23,
   "added_count": 0,
-  "removed_count": 1,
+  "removed_count": 0,
   "free_reason_counts": {
     "suffix_and_all_zero_pricing": 23
   },
   "added": [],
-  "removed": [
-    {
-      "id": "poolside/laguna-xs.2:free",
-      "name": "Poolside: Laguna XS.2 (free)",
-      "canonical_slug": "poolside/laguna-xs.2-20260421",
-      "created": 1777389604,
-      "context_length": 262144,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
+  "removed": [],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "cohere/north-mini-code:free",
