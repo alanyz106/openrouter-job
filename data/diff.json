@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-13T04:29:19Z",
+  "generated_at_utc": "2026-07-14T03:56:14Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,21 +10,134 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 23,
+  "total_current": 20,
   "added_count": 0,
-  "removed_count": 0,
+  "removed_count": 3,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 23
+    "suffix_and_all_zero_pricing": 20
   },
   "added": [],
-  "removed": [],
+  "removed": [
+    {
+      "id": "liquid/lfm-2.5-1.2b-instruct:free",
+      "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)",
+      "canonical_slug": "liquid/lfm-2.5-1.2b-instruct-20260120",
+      "created": 1768927521,
+      "context_length": 32768,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 32768,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "liquid/lfm-2.5-1.2b-thinking:free",
+      "name": "LiquidAI: LFM2.5-1.2B-Thinking (free)",
+      "canonical_slug": "liquid/lfm-2.5-1.2b-thinking-20260120",
+      "created": 1768927527,
+      "context_length": 32768,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 32768,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "openai/gpt-oss-120b:free",
+      "name": "OpenAI: gpt-oss-120b (free)",
+      "canonical_slug": "openai/gpt-oss-120b",
+      "created": 1754414231,
+      "context_length": 131072,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "min_p",
+        "reasoning",
+        "reasoning_effort",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": 131072,
+        "is_moderated": true
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
   "all_current_ids": [
     "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
-    "liquid/lfm-2.5-1.2b-instruct:free",
-    "liquid/lfm-2.5-1.2b-thinking:free",
     "meta-llama/llama-3.2-3b-instruct:free",
     "meta-llama/llama-3.3-70b-instruct:free",
     "nousresearch/hermes-3-llama-3.1-405b:free",
@@ -35,7 +148,6 @@
     "nvidia/nemotron-3.5-content-safety:free",
     "nvidia/nemotron-nano-12b-v2-vl:free",
     "nvidia/nemotron-nano-9b-v2:free",
-    "openai/gpt-oss-120b:free",
     "openai/gpt-oss-20b:free",
     "poolside/laguna-m.1:free",
     "poolside/laguna-xs-2.1:free",
