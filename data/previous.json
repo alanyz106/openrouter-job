@@ -121,16 +121,12 @@
     "supported_parameters": [
       "include_reasoning",
       "max_tokens",
-      "min_p",
       "reasoning",
       "response_format",
       "seed",
-      "stop",
       "temperature",
       "tool_choice",
       "tools",
-      "top_a",
-      "top_k",
       "top_p"
     ],
     "pricing": {
@@ -139,83 +135,7 @@
     },
     "top_provider": {
       "context_length": 262144,
-      "max_completion_tokens": 8192,
-      "is_moderated": true
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "liquid/lfm-2.5-1.2b-instruct:free",
-    "name": "LiquidAI: LFM2.5-1.2B-Instruct (free)",
-    "canonical_slug": "liquid/lfm-2.5-1.2b-instruct-20260120",
-    "created": 1768927521,
-    "context_length": 32768,
-    "supported_parameters": [
-      "frequency_penalty",
-      "max_tokens",
-      "min_p",
-      "presence_penalty",
-      "repetition_penalty",
-      "seed",
-      "stop",
-      "structured_outputs",
-      "temperature",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": null,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "liquid/lfm-2.5-1.2b-thinking:free",
-    "name": "LiquidAI: LFM2.5-1.2B-Thinking (free)",
-    "canonical_slug": "liquid/lfm-2.5-1.2b-thinking-20260120",
-    "created": 1768927527,
-    "context_length": 32768,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "min_p",
-      "presence_penalty",
-      "reasoning",
-      "repetition_penalty",
-      "seed",
-      "stop",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 32768,
-      "max_completion_tokens": null,
+      "max_completion_tokens": 32768,
       "is_moderated": false
     },
     "is_free": true,
@@ -560,44 +480,6 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "openai/gpt-oss-120b:free",
-    "name": "OpenAI: gpt-oss-120b (free)",
-    "canonical_slug": "openai/gpt-oss-120b",
-    "created": 1754414231,
-    "context_length": 131072,
-    "supported_parameters": [
-      "include_reasoning",
-      "max_tokens",
-      "min_p",
-      "reasoning",
-      "reasoning_effort",
-      "seed",
-      "stop",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_a",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 131072,
-      "max_completion_tokens": 131072,
-      "is_moderated": true
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "openai/gpt-oss-20b:free",
     "name": "OpenAI: gpt-oss-20b (free)",
     "canonical_slug": "openai/gpt-oss-20b",
@@ -608,7 +490,6 @@
       "include_reasoning",
       "logprobs",
       "max_tokens",
-      "min_p",
       "presence_penalty",
       "reasoning",
       "reasoning_effort",
@@ -620,7 +501,6 @@
       "temperature",
       "tool_choice",
       "tools",
-      "top_a",
       "top_k",
       "top_logprobs",
       "top_p"
