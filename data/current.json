@@ -451,45 +451,5 @@
       "prompt"
     ],
     "pricing_non_zero_fields": []
-  },
-  {
-    "id": "tencent/hy3:free",
-    "name": "Tencent: Hy3 (free)",
-    "canonical_slug": "tencent/hy3-20260706",
-    "created": 1783344048,
-    "context_length": 262144,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "max_tokens",
-      "presence_penalty",
-      "reasoning",
-      "reasoning_effort",
-      "repetition_penalty",
-      "seed",
-      "stop",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 262144,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
   }
 ]
