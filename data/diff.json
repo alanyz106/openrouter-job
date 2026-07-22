@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-21T04:14:45Z",
+  "generated_at_utc": "2026-07-22T04:16:01Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,36 +10,26 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 13,
-  "added_count": 0,
-  "removed_count": 1,
+  "total_current": 14,
+  "added_count": 1,
+  "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 13
+    "suffix_and_all_zero_pricing": 14
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
-      "id": "tencent/hy3:free",
-      "name": "Tencent: Hy3 (free)",
-      "canonical_slug": "tencent/hy3-20260706",
-      "created": 1783344048,
+      "id": "poolside/laguna-s-2.1:free",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "canonical_slug": "poolside/laguna-s-2.1-20260720",
+      "created": 1784652683,
       "context_length": 262144,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "reasoning_effort",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
+        "tools"
       ],
       "pricing": {
         "prompt": "0",
@@ -47,7 +37,7 @@
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 32768,
         "is_moderated": false
       },
       "is_free": true,
@@ -59,6 +49,7 @@
       "pricing_non_zero_fields": []
     }
   ],
+  "removed": [],
   "all_current_ids": [
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
@@ -72,6 +63,7 @@
     "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-20b:free",
     "poolside/laguna-m.1:free",
+    "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1:free"
   ]
 }
