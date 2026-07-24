@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-23T04:14:24Z",
+  "generated_at_utc": "2026-07-24T04:13:21Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,18 +10,60 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 14,
-  "added_count": 0,
+  "total_current": 15,
+  "added_count": 1,
   "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 14
+    "suffix_and_all_zero_pricing": 15
   },
-  "added": [],
+  "added": [
+    {
+      "id": "inclusionai/ling-3.0-flash:free",
+      "name": "Ling-3.0-flash (free)",
+      "canonical_slug": "inclusionai/ling-3.0-flash-20260723",
+      "created": 1784818580,
+      "context_length": 262144,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
   "removed": [],
   "all_current_ids": [
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
+    "inclusionai/ling-3.0-flash:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-super-120b-a12b:free",
