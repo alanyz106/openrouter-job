@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-07-29T04:10:34Z",
+  "generated_at_utc": "2026-07-30T03:55:50Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -12,44 +12,12 @@
   },
   "total_current": 14,
   "added_count": 0,
-  "removed_count": 1,
+  "removed_count": 0,
   "free_reason_counts": {
     "suffix_and_all_zero_pricing": 14
   },
   "added": [],
-  "removed": [
-    {
-      "id": "poolside/laguna-m.1:free",
-      "name": "Poolside: Laguna M.1 (free)",
-      "canonical_slug": "poolside/laguna-m.1-20260312",
-      "created": 1777388504,
-      "context_length": 262144,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
+  "removed": [],
   "all_current_ids": [
     "cohere/north-mini-code:free",
     "google/gemma-4-26b-a4b-it:free",
