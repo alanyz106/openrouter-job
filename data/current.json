@@ -113,10 +113,10 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "inclusionai/ling-3.0-flash:free",
-    "name": "Ling-3.0-flash (free)",
-    "canonical_slug": "inclusionai/ling-3.0-flash-20260723",
-    "created": 1784818580,
+    "id": "inclusionai/ling-3.0-tiny:free",
+    "name": "inclusionAI: Ling 3.0 Tiny (free)",
+    "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
+    "created": 1786034890,
     "context_length": 262144,
     "supported_parameters": [
       "frequency_penalty",
