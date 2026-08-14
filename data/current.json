@@ -37,6 +37,36 @@
     "pricing_non_zero_fields": []
   },
   {
+    "id": "dots-studio/dots-3-note-preview:free",
+    "name": "Dots Studio: Dots 3 Note Preview (free)",
+    "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
+    "created": 1786676672,
+    "context_length": 512000,
+    "supported_parameters": [
+      "include_reasoning",
+      "max_tokens",
+      "reasoning",
+      "temperature",
+      "top_p"
+    ],
+    "pricing": {
+      "prompt": "0",
+      "completion": "0"
+    },
+    "top_provider": {
+      "context_length": 512000,
+      "max_completion_tokens": 512000,
+      "is_moderated": false
+    },
+    "is_free": true,
+    "free_reason": "suffix_and_all_zero_pricing",
+    "pricing_zero_fields": [
+      "completion",
+      "prompt"
+    ],
+    "pricing_non_zero_fields": []
+  },
+  {
     "id": "google/gemma-4-26b-a4b-it:free",
     "name": "Google: Gemma 4 26B A4B  (free)",
     "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
@@ -93,46 +123,6 @@
       "temperature",
       "tool_choice",
       "tools",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 262144,
-      "max_completion_tokens": 32768,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
-    "id": "inclusionai/ling-3.0-tiny:free",
-    "name": "inclusionAI: Ling 3.0 Tiny (free)",
-    "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
-    "created": 1786034890,
-    "context_length": 262144,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "logprobs",
-      "max_tokens",
-      "presence_penalty",
-      "reasoning",
-      "repetition_penalty",
-      "seed",
-      "stop",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_logprobs",
       "top_p"
     ],
     "pricing": {
