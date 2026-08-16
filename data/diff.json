@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-15T02:12:38Z",
+  "generated_at_utc": "2026-08-16T02:20:31Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,25 +10,28 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 15,
-  "added_count": 0,
-  "removed_count": 1,
+  "total_current": 16,
+  "added_count": 1,
+  "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 15
+    "suffix_and_all_zero_pricing": 16
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
       "id": "dots-studio/dots-3-note-preview:free",
-      "name": "Dots Studio: Dots 3 Note Preview (free)",
+      "name": "Dots Studio: Dots3-Note Preview (free)",
       "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
-      "created": 1786676672,
+      "created": 1786680361,
       "context_length": 512000,
       "supported_parameters": [
         "include_reasoning",
         "max_tokens",
         "reasoning",
+        "response_format",
+        "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_p"
       ],
       "pricing": {
@@ -49,8 +52,10 @@
       "pricing_non_zero_fields": []
     }
   ],
+  "removed": [],
   "all_current_ids": [
     "cohere/north-mini-code:free",
+    "dots-studio/dots-3-note-preview:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
     "liquid/lfm-2.5-2.6b:free",
