@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-16T02:20:31Z",
+  "generated_at_utc": "2026-08-17T02:18:59Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,28 +10,32 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 16,
+  "total_current": 17,
   "added_count": 1,
   "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 16
+    "suffix_and_all_zero_pricing": 17
   },
   "added": [
     {
-      "id": "dots-studio/dots-3-note-preview:free",
-      "name": "Dots Studio: Dots3-Note Preview (free)",
-      "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
-      "created": 1786680361,
-      "context_length": 512000,
+      "id": "z-ai/glm-5.2:free",
+      "name": "Z.ai: GLM 5.2 (free)",
+      "canonical_slug": "z-ai/glm-5.2-20260616",
+      "created": 1781631930,
+      "context_length": 128000,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
         "reasoning",
-        "response_format",
-        "structured_outputs",
+        "reasoning_effort",
+        "repetition_penalty",
+        "seed",
+        "stop",
         "temperature",
-        "tool_choice",
-        "tools",
+        "top_k",
         "top_p"
       ],
       "pricing": {
@@ -39,8 +43,8 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 512000,
-        "max_completion_tokens": 512000,
+        "context_length": 128000,
+        "max_completion_tokens": 128000,
         "is_moderated": false
       },
       "is_free": true,
@@ -69,6 +73,7 @@
     "nvidia/nemotron-nano-9b-v2:free",
     "openai/gpt-oss-20b:free",
     "poolside/laguna-s-2.1:free",
-    "poolside/laguna-xs-2.1:free"
+    "poolside/laguna-xs-2.1:free",
+    "z-ai/glm-5.2:free"
   ]
 }
