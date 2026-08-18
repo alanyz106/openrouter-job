@@ -100,7 +100,7 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 131072,
+      "context_length": 262144,
       "max_completion_tokens": 32768,
       "is_moderated": false
     },
