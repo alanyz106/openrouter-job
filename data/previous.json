@@ -147,50 +147,6 @@
     "pricing_non_zero_fields": []
   },
   {
-    "id": "liquid/lfm-2.5-2.6b:free",
-    "name": "LiquidAI: LFM2.5-2.6B (free)",
-    "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
-    "created": 1786470519,
-    "context_length": 128000,
-    "supported_parameters": [
-      "frequency_penalty",
-      "include_reasoning",
-      "logprobs",
-      "max_completion_tokens",
-      "max_tokens",
-      "min_p",
-      "presence_penalty",
-      "reasoning",
-      "repetition_penalty",
-      "response_format",
-      "seed",
-      "stop",
-      "structured_outputs",
-      "temperature",
-      "tool_choice",
-      "tools",
-      "top_k",
-      "top_logprobs",
-      "top_p"
-    ],
-    "pricing": {
-      "prompt": "0",
-      "completion": "0"
-    },
-    "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 8192,
-      "is_moderated": false
-    },
-    "is_free": true,
-    "free_reason": "suffix_and_all_zero_pricing",
-    "pricing_zero_fields": [
-      "completion",
-      "prompt"
-    ],
-    "pricing_non_zero_fields": []
-  },
-  {
     "id": "nvidia/nemotron-3-nano-30b-a3b:free",
     "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
     "canonical_slug": "nvidia/nemotron-3-nano-30b-a3b",
@@ -568,7 +524,7 @@
     "name": "Z.ai: GLM 5.2 (free)",
     "canonical_slug": "z-ai/glm-5.2-20260616",
     "created": 1781631930,
-    "context_length": 128000,
+    "context_length": 256000,
     "supported_parameters": [
       "frequency_penalty",
       "include_reasoning",
@@ -578,9 +534,13 @@
       "reasoning",
       "reasoning_effort",
       "repetition_penalty",
+      "response_format",
       "seed",
       "stop",
+      "structured_outputs",
       "temperature",
+      "tool_choice",
+      "tools",
       "top_k",
       "top_p"
     ],
@@ -589,8 +549,8 @@
       "completion": "0"
     },
     "top_provider": {
-      "context_length": 128000,
-      "max_completion_tokens": 128000,
+      "context_length": 256000,
+      "max_completion_tokens": 256000,
       "is_moderated": false
     },
     "is_free": true,

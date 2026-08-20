@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-19T02:17:18Z",
+  "generated_at_utc": "2026-08-20T02:15:52Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,14 +10,13 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 16,
-  "added_count": 0,
-  "removed_count": 1,
+  "total_current": 17,
+  "added_count": 1,
+  "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 16
+    "suffix_and_all_zero_pricing": 17
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
       "id": "liquid/lfm-2.5-2.6b:free",
       "name": "LiquidAI: LFM2.5-2.6B (free)",
@@ -63,11 +62,13 @@
       "pricing_non_zero_fields": []
     }
   ],
+  "removed": [],
   "all_current_ids": [
     "cohere/north-mini-code:free",
     "dots-studio/dots-3-note-preview:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
+    "liquid/lfm-2.5-2.6b:free",
     "nvidia/nemotron-3-nano-30b-a3b:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-super-120b-a12b:free",
