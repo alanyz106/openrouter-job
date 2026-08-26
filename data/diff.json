@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-25T02:17:08Z",
+  "generated_at_utc": "2026-08-26T02:23:58Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,93 +10,25 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 15,
-  "added_count": 0,
-  "removed_count": 3,
+  "total_current": 17,
+  "added_count": 2,
+  "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 15
+    "suffix_and_all_zero_pricing": 17
   },
-  "added": [],
-  "removed": [
+  "added": [
     {
-      "id": "nvidia/nemotron-3-nano-30b-a3b:free",
-      "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
-      "canonical_slug": "nvidia/nemotron-3-nano-30b-a3b",
-      "created": 1765731275,
-      "context_length": 256000,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "seed",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 256000,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "nvidia/nemotron-nano-12b-v2-vl:free",
-      "name": "NVIDIA: Nemotron Nano 12B 2 VL (free)",
-      "canonical_slug": "nvidia/nemotron-nano-12b-v2-vl",
-      "created": 1761675565,
-      "context_length": 128000,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "seed",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": 128000,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    },
-    {
-      "id": "nvidia/nemotron-nano-9b-v2:free",
-      "name": "NVIDIA: Nemotron Nano 9B V2 (free)",
-      "canonical_slug": "nvidia/nemotron-nano-9b-v2",
-      "created": 1757106807,
-      "context_length": 128000,
+      "id": "minimax/minimax-m2.7:free",
+      "name": "MiniMax: MiniMax M2.7 (free)",
+      "canonical_slug": "minimax/minimax-m2.7-20260318",
+      "created": 1773836697,
+      "context_length": 196608,
       "supported_parameters": [
         "include_reasoning",
         "max_tokens",
         "reasoning",
         "response_format",
         "seed",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -107,8 +39,42 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": null,
+        "context_length": 196608,
+        "max_completion_tokens": 176947,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "minimax/minimax-m3:free",
+      "name": "MiniMax: MiniMax M3 (free)",
+      "canonical_slug": "minimax/minimax-m3-20260531",
+      "created": 1780245374,
+      "context_length": 1048576,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "is_free": true,
@@ -120,12 +86,15 @@
       "pricing_non_zero_fields": []
     }
   ],
+  "removed": [],
   "all_current_ids": [
     "cohere/north-mini-code:free",
     "dots-studio/dots-3-note-preview:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
     "liquid/lfm-2.5-2.6b:free",
+    "minimax/minimax-m2.7:free",
+    "minimax/minimax-m3:free",
     "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
     "nvidia/nemotron-3-super-120b-a12b:free",
     "nvidia/nemotron-3-ultra-550b-a55b:free",
