@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-08-28T12:30:46Z",
+  "generated_at_utc": "2026-08-29T07:40:26Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -11,53 +11,12 @@
     ]
   },
   "total_current": 18,
-  "added_count": 1,
+  "added_count": 0,
   "removed_count": 0,
   "free_reason_counts": {
     "suffix_and_all_zero_pricing": 18
   },
-  "added": [
-    {
-      "id": "inclusionai/ling-3.0-flash-fin:free",
-      "name": "Ling 3.0 Flash Fin (free)",
-      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
-      "created": 1787846290,
-      "context_length": 262144,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "is_free": true,
-      "free_reason": "suffix_and_all_zero_pricing",
-      "pricing_zero_fields": [
-        "completion",
-        "prompt"
-      ],
-      "pricing_non_zero_fields": []
-    }
-  ],
+  "added": [],
   "removed": [],
   "all_current_ids": [
     "cohere/north-mini-code:free",
