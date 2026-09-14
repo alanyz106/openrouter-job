@@ -282,8 +282,7 @@
       "tool_choice",
       "tools",
       "top_k",
-      "top_logprobs",
-      "top_p"
+      "top_logprobs"
     ],
     "pricing": {
       "prompt": "0",
