@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-17T05:46:56Z",
+  "generated_at_utc": "2026-09-18T05:34:01Z",
   "detection_policy": {
     "free_if": [
       "id endswith ':free' and all parsed pricing fields are zero"
@@ -10,16 +10,99 @@
       "id endswith ':free' but pricing is missing"
     ]
   },
-  "total_current": 20,
-  "added_count": 0,
+  "total_current": 22,
+  "added_count": 2,
   "removed_count": 0,
   "free_reason_counts": {
-    "suffix_and_all_zero_pricing": 20
+    "suffix_and_all_zero_pricing": 22
   },
-  "added": [],
+  "added": [
+    {
+      "id": "deepseek/deepseek-v4-flash-0731:free",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731 (free)",
+      "canonical_slug": "deepseek/deepseek-v4-flash-20260731",
+      "created": 1785478908,
+      "context_length": 1048576,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 393216,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    },
+    {
+      "id": "qwen/qwen3.8-27b:free",
+      "name": "Qwen: Qwen3.8 27B (free)",
+      "canonical_slug": "qwen/qwen3.8-27b-20260814",
+      "created": 1786722910,
+      "context_length": 262144,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
+        "is_moderated": false
+      },
+      "is_free": true,
+      "free_reason": "suffix_and_all_zero_pricing",
+      "pricing_zero_fields": [
+        "completion",
+        "prompt"
+      ],
+      "pricing_non_zero_fields": []
+    }
+  ],
   "removed": [],
   "all_current_ids": [
     "cohere/north-mini-code:free",
+    "deepseek/deepseek-v4-flash-0731:free",
     "dots-studio/dots-3-note-preview:free",
     "google/gemma-4-26b-a4b-it:free",
     "google/gemma-4-31b-it:free",
@@ -36,6 +119,7 @@
     "nvidia/nemotron-3.5-lightning:free",
     "poolside/laguna-s-2.1:free",
     "poolside/laguna-xs-2.1:free",
+    "qwen/qwen3.8-27b:free",
     "thinkingmachines/inkling-small:free",
     "thinkingmachines/inkling:free",
     "z-ai/glm-5.2:free"
